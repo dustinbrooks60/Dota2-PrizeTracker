@@ -1,0 +1,67 @@
+@page
+@model PrizeTracker.Pages.Tournaments.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 style="margin: 2%;">Details</h1>
+
+<div>
+    <h4 style="margin: 2%;">Tournament</h4>
+    <hr />
+    <dl class="row" style="margin: 2%;">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.TournamentName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.TournamentName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.StartDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.StartDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.EndDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.EndDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.PrizePool)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.PrizePool)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.NumberOfPlayers)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.NumberOfPlayers)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.Location)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.Winner)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.Winner)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tournament.RunnerUp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tournament.RunnerUp)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a style="margin: 2%;" asp-page="./Edit" asp-route-id="@Model.Tournament.ID">Edit</a> |
+    <a style="margin: 2%;" asp-page="./Index">Back to List</a>
+</div>

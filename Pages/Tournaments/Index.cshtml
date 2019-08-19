@@ -1,0 +1,107 @@
+@page
+@model PrizeTracker.Pages.Tournaments.IndexModel
+
+@{
+    ViewData["Title"] = "List of Tournaments";
+}
+
+<h1 style="margin: 2%;">Tournaments</h1>
+
+<p>
+    <a style="margin: 2%;" asp-page="Create">Create New</a>
+</p>
+
+<!-- <form>
+    <p style="margin: 2%;">
+        Tournament Name: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Search" />
+    </p>
+</form> -->
+
+<form asp-page="./Index" method="get">
+    <div class="form-actions no-color">
+        <p style="margin: 2%">
+            Find by tournament name:
+            <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-page="./Index">Back to full List</a>
+        </p>
+    </div>
+</form>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                    @Html.DisplayNameFor(model => model.Tournament[0].TournamentName)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.StartDateSort">
+                    @Html.DisplayNameFor(model => model.Tournament[0].StartDate)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.EndDateSort">
+                    @Html.DisplayNameFor(model => model.Tournament[0].EndDate)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.PrizeSort">
+                    @Html.DisplayNameFor(model => model.Tournament[0].PrizePool)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tournament[0].NumberOfPlayers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tournament[0].Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tournament[0].Winner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tournament[0].RunnerUp)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Tournament) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TournamentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrizePool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfPlayers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Winner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RunnerUp)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

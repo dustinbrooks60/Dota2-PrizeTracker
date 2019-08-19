@@ -1,0 +1,69 @@
+@page
+@model PrizeTracker.Pages.Tournaments.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Tournament</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tournament.TournamentName" class="control-label"></label>
+                <input asp-for="Tournament.TournamentName" class="form-control" />
+                <span asp-validation-for="Tournament.TournamentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.StartDate" class="control-label"></label>
+                <input asp-for="Tournament.StartDate" class="form-control" />
+                <span asp-validation-for="Tournament.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.EndDate" class="control-label"></label>
+                <input asp-for="Tournament.EndDate" class="form-control" />
+                <span asp-validation-for="Tournament.EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.PrizePool" class="control-label"></label>
+                <input asp-for="Tournament.PrizePool" class="form-control" />
+                <span asp-validation-for="Tournament.PrizePool" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.NumberOfPlayers" class="control-label"></label>
+                <input asp-for="Tournament.NumberOfPlayers" class="form-control" />
+                <span asp-validation-for="Tournament.NumberOfPlayers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.Location" class="control-label"></label>
+                <input asp-for="Tournament.Location" class="form-control" />
+                <span asp-validation-for="Tournament.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.Winner" class="control-label"></label>
+                <input asp-for="Tournament.Winner" class="form-control" />
+                <span asp-validation-for="Tournament.Winner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tournament.RunnerUp" class="control-label"></label>
+                <input asp-for="Tournament.RunnerUp" class="form-control" />
+                <span asp-validation-for="Tournament.RunnerUp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
