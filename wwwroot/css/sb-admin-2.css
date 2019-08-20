@@ -5662,6 +5662,12 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
 }
 
+
+.progress-purple {
+  background-color: purple;
+}
+
+
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
