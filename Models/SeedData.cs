@@ -293,6 +293,116 @@ namespace PrizeTracker.Models
                         Location = "Moscow",
                         Winner = "Team Liquid",
                         RunnerUp = "EG"
+                    },
+
+                    new Tournament
+                    {
+                        TournamentName = "ZOTAC Cup Masters",
+                        StartDate = DateTime.Parse("2017-05-30"),
+                        EndDate = DateTime.Parse("2017-06-03"),
+                        PrizePool = 100000,
+                        NumberOfPlayers = 8,
+                        Location = "Taipei",
+                        Winner = "Newbee",
+                        RunnerUp = "NP"
+                    },
+
+                    new Tournament
+                    {
+                        TournamentName = "The Manila Masters",
+                        StartDate = DateTime.Parse("2017-05-25"),
+                        EndDate = DateTime.Parse("2017-05-28"),
+                        PrizePool = 250000,
+                        NumberOfPlayers = 8,
+                        Location = "Manila",
+                        Winner = "EG",
+                        RunnerUp = "Newbee"
+                    },
+
+                    new Tournament
+                    {
+                        TournamentName = "StarLadder i-League Invitational Season 2",
+                        StartDate = DateTime.Parse("2017-05-18"),
+                        EndDate = DateTime.Parse("2017-05-21"),
+                        PrizePool = 100000,
+                        NumberOfPlayers = 8,
+                        Location = "Shanghai",
+                        Winner = "Team Liquid",
+                        RunnerUp = "TNC"
+                    },
+
+                    new Tournament
+                    {
+                        TournamentName = "The Kiev Major 2017",
+                        StartDate = DateTime.Parse("2017-04-24"),
+                        EndDate = DateTime.Parse("2017-04-30"),
+                        PrizePool = 3000000,
+                        NumberOfPlayers = 16,
+                        Location = "Kiev",
+                        Winner = "OG",
+                        RunnerUp = "Virtus Pro"
+                    },
+
+                    new Tournament
+                    {
+                        TournamentName = "Dota 2 Asia Champhionships 2017",
+                        StartDate = DateTime.Parse("2017-03-27"),
+                        EndDate = DateTime.Parse("2017-04-04"),
+                        PrizePool = 611997,
+                        NumberOfPlayers = 12,
+                        Location = "Shanghai",
+                        Winner = "Invictus Gaming",
+                        RunnerUp = "OG"
+                    },
+
+
+                    new Tournament
+                    {
+                        TournamentName = "StarLadder i-League StarSeries Season 3",
+                        StartDate = DateTime.Parse("2017-02-23"),
+                        EndDate = DateTime.Parse("2017-02-26"),
+                        PrizePool = 300000,
+                        NumberOfPlayers = 8,
+                        Location = "Shanghai",
+                        Winner = "Liquid",
+                        RunnerUp = "VGJ.Thunder"
+                    },
+
+
+                    new Tournament
+                    {
+                        TournamentName = "Dota Pit League Season 5",
+                        StartDate = DateTime.Parse("2017-01-20"),
+                        EndDate = DateTime.Parse("2017-01-22"),
+                        PrizePool = 139860,
+                        NumberOfPlayers = 8,
+                        Location = "Split",
+                        Winner = "EG",
+                        RunnerUp = "OG"
+                    },
+
+                    new Tournament
+                    {
+                        TournamentName = "World Electronic Sports Games 2016",
+                        StartDate = DateTime.Parse("2017-01-12"),
+                        EndDate = DateTime.Parse("2017-01-15"),
+                        PrizePool = 1500000,
+                        NumberOfPlayers = 8,
+                        Location = "Changzhou",
+                        Winner = "TNC",
+                        RunnerUp = "Cloud 9"
+                    },
+
+                    new Tournament
+                    {
+                        TournamentName = "ESL One Genting 2017",
+                        StartDate = DateTime.Parse("2017-01-06"),
+                        EndDate = DateTime.Parse("2017-01-08"),
+                        PrizePool = 250000,
+                        NumberOfPlayers = 8,
+                        Location = "Genting Highlands",
+                        Winner = "Digital Chaos",
+                        RunnerUp = "Newbee"
                     }
 
                 );
