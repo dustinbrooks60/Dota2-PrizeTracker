@@ -29,28 +29,12 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 // Area Chart Example
-var ctx = document.getElementById("myAreaChart");
-var myLineChart = new Chart(ctx, {
+var ctx = document.getElementById("TI8AreaChart");
+var TI8LineChart = new Chart(ctx, {
   type: 'line',
   data: {
     labels: ["May", "June", "July", "August"],
     datasets: [{
-      label: "The International 2019",
-      lineTension: 0.3,
-      backgroundColor: "rgba(128, 0, 128, 0.20)",
-      borderColor: "rgba(128, 0, 128, 1)",
-      pointRadius: 3,
-      pointBackgroundColor: "rgba(128, 0, 128, 1)",
-      pointBorderColor: "rgba(128, 0, 128, 1)",
-      pointHoverRadius: 3,
-      pointHoverBackgroundColor: "rgba(128, 0, 128, 1)",
-      pointHoverBorderColor: "rgba(128, 0, 128, 1)",
-      pointHitRadius: 10,
-      pointBorderWidth: 2,
-      data: [1600000, 15882910, 26307696, 31270022],
-      fill: '+1'
-    },
-    {
       label: "The International 2018",
       lineTension: 0.3,
       backgroundColor: "rgba(0, 128, 0, 0.20)",

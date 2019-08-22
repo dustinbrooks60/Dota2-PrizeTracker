@@ -33,3 +33,4 @@ C:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\Tourname
 C:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\Tournaments\Details.g.cshtml.cs
 C:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\Tournaments\Edit.g.cshtml.cs
 C:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\Tournaments\Index.g.cshtml.cs
+c:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\ti8.g.cshtml.cs
