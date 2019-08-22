@@ -2978,6 +2978,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages\\ti7.cshtml",
+      "TargetPath": "Pages\\ti7.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"

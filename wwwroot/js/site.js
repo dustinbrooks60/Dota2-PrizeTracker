@@ -3,4 +3,5 @@
 
 // Write your Javascript code.
 
+var tournaments = ["The International 2","The International 2015","The International 2016", "The International 2017", "The International"];
 
