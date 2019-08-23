@@ -2968,6 +2968,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages\\ti6.cshtml",
+      "TargetPath": "Pages\\ti6.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\Tournaments\\Create.cshtml",
       "TargetPath": "Pages\\Tournaments\\Create.cshtml",
       "FileKind": "mvc"
