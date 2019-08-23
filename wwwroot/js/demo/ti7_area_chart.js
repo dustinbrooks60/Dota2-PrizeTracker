@@ -144,7 +144,8 @@ var TI7LineChart = new Chart(ctx, {
       }],
     },
     legend: {
-      display: true
+      display: true,
+      position: 'bottom'
     },
     tooltips: {
       backgroundColor: "rgb(255,255,255)",
