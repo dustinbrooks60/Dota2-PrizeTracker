@@ -28,17 +28,17 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 // Bar Chart Example
-var ctx = document.getElementById("TI6BarChart");
-var TI6BarGraph = new Chart(ctx, {
+var ctx = document.getElementById("TI5BarChart");
+var TI5BarGraph = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["TI1", "TI2", "TI3", "TI4", "TI5", "TI6"],
+    labels: ["TI1", "TI2", "TI3", "TI4", "TI5"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "#4e73df",
       hoverBackgroundColor: "#2e59d9",
       borderColor: "#4e73df",
-      data: [1600000, 1600000, 2874380, 10923977, 18429613, 20770460],
+      data: [1600000, 1600000, 2874380, 10923977, 18429613],
     }],
   },
   options: {

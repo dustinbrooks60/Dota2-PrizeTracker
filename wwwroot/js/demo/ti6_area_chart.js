@@ -30,7 +30,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 
 // Area Chart Example
 var ctx = document.getElementById("TI6AreaChart");
-var TI7LineChart = new Chart(ctx, {
+var TI6LineChart = new Chart(ctx, {
   type: 'line',
   data: {
     labels: ["May", "June", "July", "August"],

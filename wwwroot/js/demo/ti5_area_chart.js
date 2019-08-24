@@ -1,3 +1,4 @@
+
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#858796';
@@ -27,19 +28,48 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   return s.join(dec);
 }
 
-// Bar Chart Example
-var ctx = document.getElementById("TI6BarChart");
-var TI6BarGraph = new Chart(ctx, {
-  type: 'bar',
+// Area Chart Example
+var ctx = document.getElementById("TI5AreaChart");
+var TI5LineChart = new Chart(ctx, {
+  type: 'line',
   data: {
-    labels: ["TI1", "TI2", "TI3", "TI4", "TI5", "TI6"],
-    datasets: [{
-      label: "Revenue",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#4e73df",
-      data: [1600000, 1600000, 2874380, 10923977, 18429613, 20770460],
-    }],
+    labels: ["May", "June", "July", "August"],
+    datasets: [
+    {
+      label: "The International 2015",
+      lineTension: 0.3,
+      backgroundColor: "rgba(255, 255, 0, 0.20)",
+      borderColor: "rgba(255, 255, 0, 1)",
+      pointRadius: 3,
+      pointBackgroundColor: "rgba(255, 255, 0, 1)",
+      pointBorderColor: "rgba(255, 255, 0, 1)",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(255, 255, 0, 1)",
+      pointHoverBorderColor: "rgba(255, 255, 0, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [1600000, 10222959, 14955309, 18429613],
+      fill: '+1'
+    },
+    {
+      label: "The International 2014",
+      lineTension: 0.3,
+      backgroundColor: "rgba(255, 0, 255, 0.20)",
+      borderColor: "rgba(255, 0, 255, 1)",
+      pointRadius: 3,
+      pointBackgroundColor: "rgba(255, 0, 255, 1)",
+      pointBorderColor: "rgba(255, 0, 255, 1)",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(255, 0, 255, 1)",
+      pointHoverBorderColor: "rgba(255, 0, 255, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [1600000, 9128411, 10566884, 10931105],
+      fill: 'false'
+    },
+
+  ],
+    
   },
   options: {
     maintainAspectRatio: false,
@@ -54,22 +84,19 @@ var TI6BarGraph = new Chart(ctx, {
     scales: {
       xAxes: [{
         time: {
-          unit: 'month'
+          unit: 'date'
         },
         gridLines: {
           display: false,
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit: 9
-        },
-        maxBarThickness: 25,
+          maxTicksLimit: 7
+        }
       }],
       yAxes: [{
         ticks: {
-          min: 0,
-          max: 40000000,
-          maxTicksLimit: 9,
+          maxTicksLimit: 5,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
@@ -86,19 +113,22 @@ var TI6BarGraph = new Chart(ctx, {
       }],
     },
     legend: {
-      display: false
+      display: true,
+      position: 'bottom'
     },
     tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
       titleMarginBottom: 10,
       titleFontColor: '#6e707e',
       titleFontSize: 14,
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
       borderColor: '#dddfeb',
       borderWidth: 1,
       xPadding: 15,
       yPadding: 15,
       displayColors: false,
+      intersect: false,
+      mode: 'index',
       caretPadding: 10,
       callbacks: {
         label: function(tooltipItem, chart) {
@@ -106,6 +136,6 @@ var TI6BarGraph = new Chart(ctx, {
           return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
         }
       }
-    },
+    }
   }
 });
