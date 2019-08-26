@@ -37,3 +37,4 @@ c:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\ti8.g.cs
 c:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\ti7.g.cshtml.cs
 c:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\ti6.g.cshtml.cs
 c:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\ti5.g.cshtml.cs
+c:\Users\Dustin Brooks\PrizeTracker\obj\Debug\netcoreapp2.2\Razor\Pages\ti4.g.cshtml.cs
