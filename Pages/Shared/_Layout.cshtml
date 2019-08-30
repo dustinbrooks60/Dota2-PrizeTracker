@@ -17,6 +17,8 @@
     </environment>
     <link rel="stylesheet" href="~/css/sb-admin-2.css" />
     <link href="~/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 
@@ -127,8 +129,8 @@
 
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for a tournament..." aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group ui-widget">
+              <input id="autocomplete" type="text" class="form-control bg-light border-0 small" placeholder="Search for a tournament..." aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fas fa-search fa-sm"></i>
@@ -291,6 +293,7 @@
     <script src="~/js/demo/ti6_pie_chart.js" asp-append-version="true"></script>
     <script src="~/js/demo/ti5_pie_chart.js" asp-append-version="true"></script>
     <script src="~/js/demo/ti4_pie_chart.js" asp-append-version="true"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
     @RenderSection("Scripts", required: false)

@@ -3,5 +3,22 @@
 
 // Write your Javascript code.
 
-var tournaments = ["The International 2","The International 2015","The International 2016", "The International 2017", "The International"];
+
+$(document).ready(function() {
+    $("input#autocomplete").autocomplete({
+        source: [
+             { value: "The International 2019", url: "/Index" }, 
+             { value: "The International 2018", url: "/ti8" },
+             { value: "The International 2017", url: '/ti7' },
+             { value: "The International 2016", url: '/ti6' },
+             { value: "The International 2015", url: '/ti5' },
+             { value: "The International 2014", url: '/ti4' }
+
+        ],
+        select: function (event, ui) {
+            window.location = ui.item.url;
+        }
+    });
+});
+
 
