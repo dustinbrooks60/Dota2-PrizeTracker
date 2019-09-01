@@ -33,6 +33,7 @@ var myPieGraph = new Chart(ctx, {
     },
 
 
+  // Used to convert number to comma separated value with dollar sign
   tooltips: {
       callbacks: {
         // this callback is used to create the tooltip label
