@@ -7,3 +7,5 @@ Tracks Dota 2 tournaments using JavaScript, C#, and SQLite.  Provides infographi
 ![Screenshot_3](https://user-images.githubusercontent.com/32879280/108286486-03c3b280-713e-11eb-917e-5d9aa08ac93a.jpg)
 ![Screenshot_5](https://user-images.githubusercontent.com/32879280/108286492-058d7600-713e-11eb-9f1c-d571aa3054cc.jpg)
 ![Screenshot_6](https://user-images.githubusercontent.com/32879280/108286494-06bea300-713e-11eb-8f1e-a68202911d85.jpg)
+![Screenshot_7](https://user-images.githubusercontent.com/32879280/108287169-3d48ed80-713f-11eb-964d-f087561d9bfb.jpg)
+![Screenshot_8](https://user-images.githubusercontent.com/32879280/108287171-3d48ed80-713f-11eb-96dd-ebe5fd7de96e.jpg)
