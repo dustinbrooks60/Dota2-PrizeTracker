@@ -1,5 +1,5 @@
 # Dota2-PrizeTracker
-Tracks Dota 2 tournaments using JavaScript, C#, and SQLite.  Provides infographics on yearly TI (The International) statistics.
+Tracks Dota 2 tournaments using JavaScript, C#, and SQLite. Provides infographics on yearly TI (The International) statistics using Chart.js and Bootstrap. Tournaments are stored, edited, and deleted using SQLite.
 
 Screenshots
 ---
